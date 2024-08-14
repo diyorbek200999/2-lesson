@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color:rgb(241, 105, 133);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 400px;
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+border-bottom: 5px solid white;
+border-top: 5px solid white;
+border-left: 5px solid rgb(241, 105, 133);
+border-right: 5px solid rgb(241, 105, 133);
+    animation:box 1s infinite linear;
+    position: absolute;
+    
+}
+@keyframes box{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
